@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Website</title>
+
+
+    <!--
+College Website Assignment
+Subject: Introduction to HTML and Web Designing
+Designed By: Manoranjan Barman
+Roll No: 2555001478
+Course: BCA 2nd Semester
+
+This website was created using HTML5 and CSS as part of the 2nd Semester Assignment and is hosted on GitHub Pages for educational purposes.
+-->
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#7c3aed);
+color:white;
+}
+
+/* Header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#08142d;
+padding:15px 30px;
+}
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-area img{
+width:70px;
+height:70px;
+border-radius:50%;
+}
+
+.college-title h1{
+font-size:30px;
+}
+
+.college-title p{
+font-size:14px;
+}
+
+/* Menu */
+
+nav{
+background:#13203d;
+padding:10px;
+}
+
+nav ul{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+list-style:none;
+}
+
+nav li{
+margin:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:10px 15px;
+border-radius:6px;
+transition:0.3s;
+}
+
+nav a:hover{
+background:#7c3aed;
+}
+
+/* Hero Section */
+
+.hero{
+position:relative;
+text-align:center;
+}
+
+.hero img{
+width:100%;
+height:450px;
+object-fit:cover;
+opacity:0.75;
+}
+
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+.hero-text h1{
+font-size:50px;
+font-weight:bold;
+}
+
+.hero-text p{
+font-size:20px;
+}
+
+/* Sections */
+section{
+margin:25px;
+padding:25px;
+background:rgba(255,255,255,0.08);
+border-radius:15px;
+backdrop-filter:blur(5px);
+}
+
+section h2{
+margin-bottom:15px;
+color:#facc15;
+}
+
+/* Courses */
+.course-list{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.course{
+background:#312e81;
+border-radius:12px;
+padding:20px;
+text-align:center;
+}
+
+.course summary{
+font-size:28px;
+font-weight:bold;
+cursor:pointer;
+list-style:none;
+}
+
+.course summary::-webkit-details-marker{
+display:none;
+}
+
+.course p{
+margin-top:15px;
+line-height:1.6;
+text-align:left;
+}
+
+
+.course{
+background:#312e81;
+border-radius:12px;
+padding:20px;
+color:white;
+}
+
+.course summary{
+font-size:28px;
+font-weight:bold;
+cursor:pointer;
+list-style:none;
+}
+
+.course summary::-webkit-details-marker{
+display:none;
+}
+
+
+.item h3{
+margin-bottom:8px;
+}
+.item p{
+line-height:1.6;
+}
+
+/* Colleges */
+
+.college-grid{
+display:grid;
+grid-template-columns:repeat(4 ,1fr);
+gap:20px;
+}
+
+.college-grid a{
+text-align:center;
+text-decoration:none;
+color:white;
+}
+
+.college-grid img{
+width:120px;
+height:120px;
+border-radius:10px;
+background:white;
+padding:5px;
+}
+
+/* Links */
+
+.links a{
+display:block;
+color:#93c5fd;
+margin:8px 0;
+}
+
+/* Contact */
+
+.contact p{
+margin:8px 0;
+}
+
+/* Social */
+
+.social{
+display:flex;
+gap:15px;
+margin-top:15px;
+}
+
+.social a{
+background:#2563eb;
+padding:10px 15px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:20px;
+background:#08142d;
+margin-top:20px;
+}
+
+
+@media screen and (max-width:768px){
+
+.college-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo-area">
+<img src="logo.png" alt="Logo">
+
+<div class="college-title">
+<h1>TANGLA COLLEGE</h1>
+<p>Affiliated to Bodoland University</p>
+</div>
+
+</div>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Admission</a></li>
+<li><a href="#">Notice</a></li>
+<li><a href="#">Courses</a></li>
+<li><a href="#">Departments</a></li>
+<li><a href="#">Requirements</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+
+<img src="college.jpg" alt="College Gate">
+
+<div class="hero-text">
+<h1> <i>WELCOME TO TANGLA COLLEGE </i></h1>
+<p>Knowledge • Excellence • Success</p>
+</div>
+
+</div>
+
+<section>
+
+<h2>About College</h2>
+
+<p>
+Tangla College is a reputed institution dedicated to providing quality higher education and promoting academic excellence. The college offers a student-friendly learning environment with experienced faculty members, modern teaching methods, and various academic resources. Our goal is to help students develop knowledge, skills, and values that prepare them for successful careers and responsible citizenship. The college offers undergraduate courses in Bachelor of Computer Applications (BCA), Bachelor of Arts (BA), Bachelor of Commerce (B.Com), and Bachelor of Science (B.Sc). Along with academics, students are encouraged to participate in cultural activities, sports, seminars, and skill development programs. The institution focuses on both personal and professional growth, ensuring that students are well-prepared to meet future challenges. With a commitment to excellence, innovation, and discipline, Tangla College continues to inspire students to achieve their goals and contribute positively to society.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Courses Offered</h2>
+
+<div class="course-list">
+
+<details class="course">
+<summary>BCA</summary>
+</details>
+
+<details class="course">
+<summary>BA</summary>
+</details>
+
+<details class="course">
+<summary>B.Sc</summary>
+</details>
+
+<details class="course">
+<summary>B.Com</summary>
+</details>
+
+</div>
+
+</section>
+  
+<section>
+<h2></h2>
+
+<details class="course">
+  
+<summary>
+  Show Courses details</summary>
+
+<div class="course-list">
+
+<div class="item">
+<h3>BCA</h3>
+<p>BCA (Bachelor of Computer Applications)
+BCA is a 4-year undergraduate program under the FYUGP structure designed to build strong foundations in computer science and information technology. The course includes programming languages, software development, database systems, web technologies, operating systems, and networking. With the additional fourth year, students get deeper practical exposure, project work, and skill-based training that improves industry readiness. In Assam and other regions, this program is highly relevant due to the growing IT sector. Graduates can work as software developers, web developers, system analysts, or IT support professionals, or pursue higher studies such as MCA or specialized IT certifications.</p>
+</div>
+
+<div class="item">
+<h3>BA</h3>
+<p>BA (Bachelor of Arts)
+BA is a 4-year undergraduate program under FYUGP that focuses on humanities and social sciences. Students can choose from a wide range of subjects such as English, History, Political Science, Sociology, Education, and Philosophy, depending on their interests. The FYUGP system allows more flexibility, interdisciplinary learning, and skill enhancement over four years. The program helps develop communication skills, critical thinking, and a deeper understanding of society and culture. In Assam, BA graduates often prepare for government services, teaching careers, journalism, and competitive examinations. The 4th year adds research exposure and advanced academic training.</p>
+</div>
+
+<div class="item">
+<h3>B.Sc</h3>
+<p>B.Sc (Bachelor of Science)
+B.Sc is a 4-year undergraduate program under FYUGP that focuses on scientific learning and practical application. It includes subjects such as Physics, Chemistry, Mathematics, Botany, and Zoology depending on specialization. The extended 4-year structure gives students more laboratory experience, research projects, and skill-based learning. This helps in developing strong analytical and problem-solving abilities. In Assam, B.Sc graduates have opportunities in research institutions, healthcare, education, laboratory technology, and technical industries. It also provides a strong base for M.Sc, professional courses, and competitive exams.</p>
+</div>
+
+<div class="item">
+<h3>B.Com</h3>
+<p>B.Com (Bachelor of Commerce)
+B.Com is a 4-year undergraduate program under FYUGP focused on commerce, finance, accounting, taxation, and business studies. The course combines theoretical knowledge with practical training in financial systems, business management, and economic principles. The additional fourth year allows students to gain deeper specialization, internships, and project-based learning. In Assam, B.Com graduates are well-prepared for careers in banking, accounting firms, corporate sectors, and government finance departments. Many also pursue professional courses like CA, CMA, CS, or higher studies such as MBA.</p>
+</div>
+
+</div>
+</details>
+
+</section>
+
+<section> 
+<h2>Helpful Sites</h2>
+
+<div class="college-grid">
+
+<a href="https://bodolanduniversity.qwertcorp.in/">
+<img src="college1.png">
+<p>BODOLAND UNIVERSITY</p>
+</a>
+
+<a href="https://gauhati.ac.in/">
+<img src="college2.png">
+<p>GAUHATI UNIVERSITY</p>
+</a>
+
+<a href= "https://scholarships.gov.in" />
+<img src="college3.png">
+<p>SCHOLARSHIPS</p>
+</a>
+
+<a href="https://www.ndl.gov.in/">
+<img src="college4.png">
+<p>DIGITAL LIBRARY</p>
+</a>
+
+</div>
+
+</section>
+
+<section class="links">
+
+<h2>Important Links</h2>
+
+<a href="https://assamadmission.samarth.ac.in/">Online Admission</a>
+<a href="https://www.ugc.gov.in/">UGC</a>
+<a href="https://buniv.samarth.edu.in/index.php/site/login">Student Login</a>
+<a href="http://naac.gov.in/index.php/en/">NAAC</a>
+<a href="https://www.buddy4study.com/">Scholarship Information</a>
+
+</section>
+
+<section class="contact">
+
+<h2>Address & Contact Information </h2>
+
+<p><b>Address:</b> Chamuapara , Tangla, Udalguri (BTAD), Assam, India </p>
+<p><b>Phone:</b> +919435780381</p>
+<p><b>Email:</b> contact@tanglacollege.com </p>
+
+<div class="social">
+
+<a href="https://instagram.com">Instagram</a>
+
+<a href="https://facebook.com">Facebook</a>
+
+<a href="https://twitter.com">Twitter</a>
+
+
+<a href="https://youtube.com">Youtube</a>
+
+</div>
+
+</section>
+
+<footer>
+
+
+
+<p> © 2026 Tangla College || BCA 2nd Semester </p>  
+<p>Designed by : Manoranjan Barman ||
+Roll No: 2555001478</p>
+
+</footer>
+
+</body>
+</html>
